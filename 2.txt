@@ -1,0 +1,18 @@
+entity half_adder is
+port(a,b:in STD_LOGIC;carry.sum:out STD_LOGIC);
+end half_adder;
+architecture Behavioral of galf_adder is begin
+Sum<=(not(a) and b) or(a and(not(b)));
+carry<=a and b;
+end behavioral;
+
+
+
+
+entity full_adder is
+port(a,b,c:in STD_LOGIC:carry,sum:out STD_LOGIC);
+end full_adder;
+architecture Behavioral of full_adder is begin
+Sum<=(not(c) and (a xorb)) or(c and (a xnor b));
+carry<=(a and b) or (a and c) or (b and c);
+end behavioral;
