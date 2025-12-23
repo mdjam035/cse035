@@ -1,6 +1,8 @@
-ye BD+BD
-Cntity Poum_vaniableBool._exp 9s
-Pord o, bc,d:in srb_Locre; y_out:out srD-Loerc)
-end Fouc_raiableBool.Bp:
-agchsfectude Behavtonal ot Poua_vaotable Bool-esp 8s beoใo
-y-outs=(CCoet(s)and(ootCd))On(b and.d);end gebavioral;
+Y=A+C^
+entity three-variable_booleanExp
+port(a,b,c: in STD_LOGIC:y_out:out STD_LOGIC);
+end three_variable_booleanExp;
+architecture Behavioral of three_variable_booleanExp is
+begin
+y_out<=(a or(not(c)));
+end behavioral;
